@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="sign-up form">
+    <title>sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
+
+
+    <script defer src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+</head>
+
+<body>
+
+    <div class="left">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </div>
+
+
+    <div class="rigth">
+
+        <h2>Try it free 7 days <span>then $20/mo.</span></h2>
+        <form>
+            <div class="inputMod name">
+                <img id="img1" class="img img1" src="images/icon-error.svg" alt="icon error" draggable="false">
+                <input type="text" id="name" name="name" placeholder="Name" oninput="verifyName()">
+                <p id="p1"></p>
+            </div>
+            <div class="inputMod lastname">
+                <img id="img2" class="img img2" src="images/icon-error.svg" alt="icon error" draggable="false">
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name" oninput="verifyLastname()">
+                <p id="p2"></p>
+            </div>
+            <div class="inputMod email">
+                <img id="img3" class="img img3" src="images/icon-error.svg" alt="icon error" draggable="false">
+                <input id="emailInput" name="email" type="email" placeholder="Email Address" oninput="verifyEmail()">
+                <p id="p3"></p>
+            </div>
+            <div class="inputMod password">
+                <img id="img4" class="img img4" src="images/icon-error.svg" alt="icon error" draggable="false">
+                <input type="password" id="password" name="password" placeholder="Password" oninput="verifyPassword()">
+                <p id="p4"></p>
+                <div class="showPass">
+                    <input id="showPass" name="showPass" type="checkbox" onclick="showPassword()">
+                    <label for="showPass">show password</label>
+                </div>
+            </div>
+            <button type="button" onclick="verifyInput()">CLAIM YOUR FREE TRIAL</button>
+            <h6>By clicking the button, you are agreeing to our <span>Terms and Services</span> </h6>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
